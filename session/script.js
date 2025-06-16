@@ -1,4 +1,6 @@
-var api = "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";
+// To get your api key make your account on https://groq.com/ and click on "create new API"
+
+var api = "<YOUR API KEY HERE>";
 
 var query = document.getElementById("query");
 var sys = document.getElementById("system");
@@ -10,7 +12,7 @@ function generateQuery(e) {
   console.log(query.value);
 
   var body = {
-    model: "llama-3.3-70b-versatile",
+    model: "meta-llama/llama-4-maverick-17b-128e-instruct",
     messages: [
       {
         role: "system",
