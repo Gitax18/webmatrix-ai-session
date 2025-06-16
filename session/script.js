@@ -1,6 +1,7 @@
 var api = "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";
 
 var query = document.getElementById("query");
+var sys = document.getElementById("system");
 var submit = document.getElementById("submit");
 var output = document.getElementById("output");
 
@@ -13,8 +14,7 @@ function generateQuery(e) {
     messages: [
       {
         role: "system",
-        content:
-          "you are java professor, and your task is to help students in solving college java assignments. Don't generate lengthy answers, used at max 1 or 2 paragraphs for output. Generate output in beautifully formatted HTML.",
+        content: sys.value,
       },
       {
         role: "user",
